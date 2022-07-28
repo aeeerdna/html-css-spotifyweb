@@ -1,0 +1,124 @@
+/********** VARIABLES **********/
+:root {
+    --padding: 10px;
+    --img-width: 20px;
+}
+
+
+
+
+/********** GENERICS **********/
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+/********** UTILITIES **********/
+.web-app {
+    height: 100vh;
+}
+
+
+/********** FLEX **********/
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+
+
+
+/********** SPOTIFY CONTENT **********/
+
+
+
+
+/***** ASIDE MENU' *****/
+aside {
+    background-color: black;
+    padding: var(--padding);
+    justify-content: space-between;
+}
+
+aside img {
+    width: var(--img-width);
+}
+
+/***** end ASIDE MENU' *****/
+
+
+
+/***** MUSIC PLAYLISTS *****/
+main {
+    position: relative;
+}
+
+
+/* UPGRADE VERSIONE */
+header {
+    background-color: #090b13;
+    opacity: 75%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    padding: var(--padding);
+    text-align: right;
+}
+
+
+/* end UPGRADE VERSION */
+
+
+/*** LOOKING FOR SONGS ***/
+.playlist-container {
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+}
+
+/* SEARCH PLAYLISTS */
+.playlist {
+    height: 300vh;
+    background-color: red;
+}
+
+
+/* end SEARCH PLAYLIST */
+
+
+/* AVAILABLE PLAYLISTS */
+
+
+
+/* end AVAILABLE PLAYLIST */
+
+/*** end LOOKING FOR SONGS ***/
+
+
+
+/***** end MUSIC PLAYLISTS *****/
+
+
+/***** FOOTER *****/
+footer {
+    background-color: #282828;
+    height: 100px;
+}
