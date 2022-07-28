@@ -16,7 +16,6 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: green;
     color: white;
 }
 
@@ -24,10 +23,13 @@ img {
     width: 100%;
 }
 
+
+
 /********** UTILITIES **********/
 .web-app {
     height: 100vh;
 }
+
 
 
 /********** FLEX **********/
@@ -41,6 +43,10 @@ img {
 
 .grow-1 {
     flex-grow: 1;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 
@@ -62,6 +68,20 @@ aside img {
     width: var(--img-width);
 }
 
+.profile-icons img,
+.search-icons img {
+    padding-bottom: 10px;
+}
+
+.profile-icons img:last-child {
+    background-color: #71737a;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    align-items: center;
+}
+
 /***** end ASIDE MENU' *****/
 
 
@@ -69,6 +89,7 @@ aside img {
 /***** MUSIC PLAYLISTS *****/
 main {
     position: relative;
+    background-color: #141922;
 }
 
 
@@ -95,11 +116,19 @@ header {
 }
 
 /* SEARCH PLAYLISTS */
-.playlist {
-    height: 300vh;
-    background-color: red;
+.playlist-container nav {
+    padding: 100px 0px 50px;
 }
 
+.playlist-container ul {
+    list-style-type: none;
+    color: #71737a;
+    font-size: .9rem;
+}
+
+.playlist-container li {
+    padding: 10px;
+}
 
 /* end SEARCH PLAYLIST */
 
@@ -121,4 +150,13 @@ header {
 footer {
     background-color: #282828;
     height: 100px;
+}
+
+
+
+
+/* temporaneo */
+
+.playlist {
+    height: 300vh;
 }
