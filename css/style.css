@@ -1,7 +1,14 @@
 /********** VARIABLES **********/
 :root {
-    --padding: 10px;
+    --padding-10: 10px;
+    --padding-20: 20px;
     --img-width: 20px;
+    --bg-black-header: #090b12;
+    --bg-black-main: #141922;
+    --bg-grey-footer: #282828;
+    --bg-grey-profile-icon: #71737a;
+    --color-grey-words: #71737a;
+    --footer-height: 100px;
 }
 
 
@@ -49,7 +56,9 @@ img {
     flex-wrap: wrap;
 }
 
-
+.row {
+    flex-direction: row;
+}
 
 
 /********** SPOTIFY CONTENT **********/
@@ -60,7 +69,7 @@ img {
 /***** ASIDE MENU' *****/
 aside {
     background-color: black;
-    padding: var(--padding);
+    padding: var(--padding-10);
     justify-content: space-between;
 }
 
@@ -68,18 +77,22 @@ aside img {
     width: var(--img-width);
 }
 
-.profile-icons img,
 .search-icons img {
     padding-bottom: 10px;
 }
 
-.profile-icons img:last-child {
-    background-color: #71737a;
+.profile-icon {
+    background-color: var(--bg-grey-profile-icon);
     border-radius: 50%;
     width: 20px;
     height: 20px;
     object-fit: cover;
     align-items: center;
+    margin-top: 10px;
+}
+
+.profile-icon img {
+    padding: 4px;
 }
 
 /***** end ASIDE MENU' *****/
@@ -89,22 +102,31 @@ aside img {
 /***** MUSIC PLAYLISTS *****/
 main {
     position: relative;
-    background-color: #141922;
+    background-color: var(--bg-black-main);
 }
 
 
 /* UPGRADE VERSIONE */
 header {
-    background-color: #090b13;
+    background-color: var(--bg-black-header);
     opacity: 75%;
     position: absolute;
     right: 0px;
     top: 0px;
     width: 100%;
-    padding: var(--padding);
+    padding: var(--padding-20);
     text-align: right;
 }
 
+header a {
+    text-decoration: none;
+    font-size: .7rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: var(--padding-10) 30px;
+    color: white;
+    font-weight: bold;
+}
 
 /* end UPGRADE VERSION */
 
@@ -112,29 +134,54 @@ header {
 /*** LOOKING FOR SONGS ***/
 .playlist-container {
     overflow-y: auto;
-    height: calc(100vh - 100px);
+    height: calc(100vh - var(--footer-height));
 }
 
 /* SEARCH PLAYLISTS */
 .playlist-container nav {
-    padding: 100px 0px 50px;
+    padding: 80px 0px 20px;
 }
 
 .playlist-container ul {
     list-style-type: none;
-    color: #71737a;
-    font-size: .9rem;
+    color: var(--color-grey-words);
+    font-size: .7rem;
+    font-weight: bold;
 }
 
 .playlist-container li {
-    padding: 10px;
+    padding: var(--padding-10);
 }
 
 /* end SEARCH PLAYLIST */
 
 
 /* AVAILABLE PLAYLISTS */
+#album-container h1 {
+    font-size: 1.3rem;
+    overflow-y: auto;
+    padding: var(--padding-10);
+}
 
+#album-container .album-item {
+    width: calc(100% / 2);
+    padding: var(--padding-10);
+}
+
+#album-container .album {
+    grid-row-gap: 10px;
+}
+
+#album-container h2 {
+    font-size: .7rem;
+    text-align: center;
+}
+
+#album-container p {
+    font-size: .6rem;
+    color: var(--color-grey-words);
+    text-align: center;
+}
 
 
 /* end AVAILABLE PLAYLIST */
@@ -148,7 +195,7 @@ header {
 
 /***** FOOTER *****/
 footer {
-    background-color: #282828;
+    background-color: var(--bg-grey-footer);
     height: 100px;
 }
 
