@@ -308,3 +308,17 @@ footer .volume-control {
 .playlist {
     height: 300vh;
 }
+
+/* MEDIUM SCREEN */
+@media screen and (min-width: 878px) {
+    #album-contaner .album-item {
+        width: calc(100% / 4);
+    }
+}
+
+/* LARGE SCREEN */
+@media screen and (min-width: 1440px) {
+    #album-contaner .album-item {
+        width: calc(100% / 6);
+    }
+}
