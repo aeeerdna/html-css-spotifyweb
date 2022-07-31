@@ -162,21 +162,29 @@ header a {
 
 
 /* AVAILABLE PLAYLISTS */
+#most-listened-container h1,
+#create-container h1,
 #album-container h1 {
     font-size: 1.3rem;
     overflow-y: auto;
     padding: var(--padding-10);
 }
 
+#most-listened-container .album-item,
+#create-container .album-item,
 #album-container .album-item {
     width: calc(100% / 2);
     padding: var(--padding-10);
 }
 
+#most-listened-container .album,
+#create-container .album,
 #album-container .album {
     grid-row-gap: 10px;
 }
 
+#most-listened-container h2,
+#create-container h2,
 #album-container h2 {
     font-size: .7rem;
     text-align: center;
@@ -188,27 +196,73 @@ header a {
     text-align: center;
 }
 
+#most-listened-container,
+#create-container {
+    margin-top: 20px;
+}
 
 /* end AVAILABLE PLAYLIST */
 
 /*** end LOOKING FOR SONGS ***/
 
 
-
 /***** end MUSIC PLAYLISTS *****/
+
+
 
 
 /***** FOOTER *****/
 footer {
     background-color: var(--bg-grey-footer);
-    height: 100px;
+    height: 80px;
+    padding: var(--padding-10);
 }
 
 
+
+.in-play img {
+    width: 10%;
+}
+
+.in-play h2 {
+    font-size: .5rem;
+}
+
+.in-play p {
+    font-size: .4rem;
+}
+
+.song {
+    padding-left: 5px;
+}
 
 
 /* temporaneo */
 
 .playlist {
     height: 300vh;
+}
+
+/* volume slider */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: grey;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10%;
+    height: 10px;
+    background: white;
+    cursor: pointer;
+    border-radius: 15px;
 }

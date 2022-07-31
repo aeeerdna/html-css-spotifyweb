@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -115,8 +118,48 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
 
+                    <div id="create-container">
+                        <h1>Creato per John Doe</h1>
+
+                        <div class="flex wrap row">
+                            <div class="album-item">
+                                <div class="album flex column">
+                                    <img src="img/radar.jpeg" alt="Radar">
+                                    <h2>Release Radar</h2>
+                                </div>
+                            </div>
+
+                            <div class="album-item">
+                                <div class="album flex column">
+                                    <img src="img/mixdaily.jpeg" alt="Daily Mix">
+                                    <h2>Daily Mix 1</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="most-listened-container">
+                        <h1>Artisti più ascoltati</h1>
+
+                        <div class="flex wrap row">
+                            <div class="album-item">
+                                <div class="album flex column">
+                                    <img src="img/youg.jpeg" alt="Lana Del Rey">
+                                    <h2>Lana Del Rey</h2>
+                                </div>
+                            </div>
+
+                            <div class="album-item">
+                                <div class="album flex column">
+                                    <img src="img/einaudi.jpeg" alt="Einaudi">
+                                    <h2>Einaudi</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- end AVAILABLE PLAYLISTS -->
 
@@ -129,7 +172,48 @@
         </div>
 
         <footer>
-            qq
+            <div class="flex">
+
+                <div class="in-play">
+                    <div class="flex">
+                        <img src="img/cure.jpeg" alt="Cure">
+                        <div class="song">
+                            <h2>Cure</h2>
+                            <p>Unknow Artist</p>
+                        </div>
+                        <div class="flex column">
+                            <i class="fa-regular fa-heart"></i>
+
+                            <i class="fa-regular fa-folder"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex column">
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-shuffle"></i>
+                            <i class="fa-solid fa-backward-step"></i>
+                            <i class="fa-regular fa-circle-play"></i>
+                            <i class="fa-solid fa-forward-step"></i>
+                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                        </div>
+
+                        <div>
+                            <input type="range" min="1" max="100" value="50" class="slider">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="1" max="100" value="50" class="slider">
+                </div>
+
+            </div>
+
         </footer>
     </div>
 </body>
