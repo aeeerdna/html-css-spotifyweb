@@ -171,48 +171,58 @@
 
         </div>
 
-        <footer>
-            <div class="flex">
+        <footer class="flex align-center space-between">
 
-                <div class="in-play">
-                    <div class="flex">
-                        <img src="img/cure.jpeg" alt="Cure">
-                        <div class="song">
-                            <h2>Cure</h2>
-                            <p>Unknow Artist</p>
-                        </div>
-                        <div class="flex column">
-                            <i class="fa-regular fa-heart"></i>
 
-                            <i class="fa-regular fa-folder"></i>
-                        </div>
+            <div class="in-play">
+                <div class="flex">
+
+                    <img src="img/cure.jpeg" alt="Cure">
+
+
+                    <div class="song">
+                        <h2>Cure</h2>
+                        <p>Unknow Artist</p>
+                    </div>
+
+                    <div class="like flex column">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
                     </div>
                 </div>
-
-                <div class="flex column">
-                    <div>
-                        <div>
-                            <i class="fa-solid fa-shuffle"></i>
-                            <i class="fa-solid fa-backward-step"></i>
-                            <i class="fa-regular fa-circle-play"></i>
-                            <i class="fa-solid fa-forward-step"></i>
-                            <i class="fa-solid fa-arrow-rotate-right"></i>
-                        </div>
-
-                        <div>
-                            <input type="range" min="1" max="100" value="50" class="slider">
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-list"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                    <input type="range" min="1" max="100" value="50" class="slider">
-                </div>
-
             </div>
+
+            <div class="music-control">
+                <div class="flex column">
+                    <div class="play-icons">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </div>
+
+                    <div>
+                        <input type="range" min="1" max="100" value="50" class="slider">
+                    </div>
+                </div>
+            </div>
+
+            <div class="volume-control">
+                <div class="flex">
+                    <div class="volume-icons">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-display"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+
+                    <div>
+                        <input type="range" min="1" max="100" value="50" class="slider">
+                    </div>
+                </div>
+            </div>
+
+
 
         </footer>
     </div>

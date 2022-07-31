@@ -64,6 +64,10 @@ img {
     align-items: center;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 /********** SPOTIFY CONTENT **********/
 
 
@@ -218,30 +222,57 @@ footer {
     padding: var(--padding-10);
 }
 
+footer .in-play {
+    width: calc(100% / 3 - 50px);
+}
 
+footer .music-control {
+    width: calc(100% / 3 - 50px);
+}
+
+footer .volume-control {
+    width: calc(100% / 3 - 50px);
+}
 
 .in-play img {
-    width: 10%;
+    width: 25%;
 }
 
 .in-play h2 {
-    font-size: .5rem;
+    font-size: .8rem;
 }
 
 .in-play p {
-    font-size: .4rem;
+    font-size: .6rem;
+    color: var(--color-grey-words);
 }
 
+.like,
 .song {
-    padding-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: center;
 }
 
 
-/* temporaneo */
-
-.playlist {
-    height: 300vh;
+.play-icons {
+    text-align: center;
+    font-size: 1.2rem;
 }
+
+.play-icons i {
+    padding: var(--padding-10);
+}
+
+.volume-control i {
+    padding: 2px;
+}
+
+.volume-icons {
+    margin-right: 2px;
+}
+
+
 
 /* volume slider */
 .slider {
@@ -265,4 +296,15 @@ footer {
     background: white;
     cursor: pointer;
     border-radius: 15px;
+}
+
+
+
+
+
+
+/* temporaneo */
+
+.playlist {
+    height: 300vh;
 }
