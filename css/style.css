@@ -219,23 +219,40 @@ header a {
 footer {
     background-color: var(--bg-grey-footer);
     height: 80px;
-    padding: var(--padding-10);
+    padding: 5px;
 }
 
 footer .in-play {
-    width: calc(100% / 3 - 50px);
+    width: 30%;
 }
 
 footer .music-control {
-    width: calc(100% / 3 - 50px);
+    width: 40%;
+    padding: 0px 10px;
 }
 
 footer .volume-control {
-    width: calc(100% / 3 - 50px);
+    width: 30%;
 }
 
-.in-play img {
-    width: 25%;
+.album-song {
+    width: 30%;
+}
+
+.song {
+    width: 40%;
+}
+
+.like {
+    width: 30%;
+    font-size: .8rem;
+}
+
+.like,
+.song {
+    padding-left: 5px;
+    padding-right: 5px;
+    align-self: center;
 }
 
 .in-play h2 {
@@ -247,32 +264,32 @@ footer .volume-control {
     color: var(--color-grey-words);
 }
 
-.like,
-.song {
-    padding-left: 10px;
-    padding-right: 10px;
-    align-self: center;
-}
-
-
 .play-icons {
     text-align: center;
     font-size: 1.2rem;
 }
 
-.play-icons i {
-    padding: var(--padding-10);
+.music-control .fa-circle-play {
+    font-size: 1.5rem;
 }
 
-.volume-control i {
-    padding: 2px;
+.play-icons i {
+    padding: 10px 2px;
 }
+
+/* .volume-control i {
+    padding: 2px;
+} */
 
 .volume-icons {
-    margin-right: 2px;
+    width: 100%;
+    font-size: .8rem;
 }
 
-
+.volume-control .slider {
+    margin: 2px;
+    align-self: center;
+}
 
 /* volume slider */
 .slider {
@@ -297,10 +314,6 @@ footer .volume-control {
     cursor: pointer;
     border-radius: 15px;
 }
-
-
-
-
 
 
 /* temporaneo */
